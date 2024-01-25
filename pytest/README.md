@@ -6,8 +6,9 @@
 
 2. **Access the built-in terminal:**
 
-   - **On Windows:** Use the shortcut `Ctrl + `` (Control plus backtick)
-   - **On Mac:** Use the shortcut `Cmd + `` (Command plus backtick)
+   - Look at the top of the window to find the main menu.
+   - Click on 'Terminal' in the menu bar.
+   - In the drop-down menu that appears, select 'New Terminal'.
 
 3. **In the terminal, first check if you have `pytest` installed by typing:**
 
