@@ -37,4 +37,8 @@
 
 6. **If you encounter any issues during installation, ensure that Python and pip are correctly installed and added to your system's PATH.**
 
-7. **Once pytest is installed, you can use it to run tests in your Python projects.**
+7. **Once pytest is installed, you can use it to run tests in your Python projects by following these steps:**
+
+   - Open the terminal.
+   - Ensure your current directory is the root of your Python project or the directory containing your test files.
+   - In the terminal, type the command `python -m pytest <TestFileName>` and press Enter.
