@@ -1,17 +1,21 @@
 def add(num1, num2):
     return num1 + num2
 
+
 def subtract(num1, num2):
     return num1 - num2
 
+
 def multiply(num1, num2):
     return num1 * num2
+
 
 def divide(num1, num2):
     try:
         return num1 / num2
     except ZeroDivisionError:
         return "Error: Division by zero is not allowed."
+
 
 def calculator():
     print("Simple Calculator")
@@ -27,8 +31,12 @@ def calculator():
         choice = input("Enter choice (1/2/3/4): ")
 
         if choice in ["1", "2", "3", "4"]:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+            try:
+                num1 = float(input("Enter first number: "))
+                num2 = float(input("Enter second number: "))
+            except ValueError:
+                print("Error: Please only use numbers.")
+                continue
 
             if choice == "1":
                 result = add(num1, num2)
@@ -39,10 +47,11 @@ def calculator():
             elif choice == "4":
                 result = divide(num1, num2)
             print(f"Result: {result}\n")
-                
+
         elif choice == "5":
             break
         else:
             print("Invalid input. Please try again.")
+
 
 calculator()
