@@ -17,7 +17,7 @@
    ```
 
    - If you see a version number, `pytest` is already installed.
-   - If you get an error or message saying 'pytest' is not recognized, proceed to the next step.
+   - If you get an error or message saying 'pytest' is not recognised, proceed to the next step.
 
 4. **To install pytest, use the pip command:**
 
