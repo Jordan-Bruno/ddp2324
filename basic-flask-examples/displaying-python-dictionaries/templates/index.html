@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Jordan's Go Shop</title>
+    </head>
+
+    <body>
+        <h1>Jordan's Go Shop (Formerly Jordan's Ramen)</h1>
+        <ul>
+            {% for key, value in inventory_dict.items() %}
+            <li>
+                ID Number: {{ key }} <br>
+                Item Name: {{ value[0] }} <br>
+                Item Description: {{ value[1] }} <br>
+                Quantity: {{ value[2] }}
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+
+</html>
