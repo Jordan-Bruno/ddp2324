@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Jordan's Go Shop</title>
+    </head>
+
+    <body>
+        <h1>Jordan's Go Shop (Formerly Jordan's Ramen)</h1>
+        <ul>
+            {% for key, value in inventory_dict.items() %}
+            <li>
+                ID Number: {{ key }} <br>
+                Item Name: {{ value[0] }} <br>
+                Item Description: {{ value[1] }} <br>
+                Quantity: {{ value[2] }}
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h2>Add Inventory</h2>
+        <form action="/add_item" method="post">
+            <input type="number" name="id" placeholder="ID" required>
+            <input type="text" name="name" placeholder="Item Name" required>
+            <input type="text" name="description" placeholder="Item Description" required>
+            <input type="number" name="quantity" placeholder="Quantity" required>
+            <button type="submit">Add Item</button>
+        </form>
+
+    </body>
+
+</html>
